@@ -1,0 +1,104 @@
+.product-view-wrapper {
+  width: 55%;
+  height: 75%;
+  // border: 2px solid green;
+  border-radius: 20px;
+  background-color: rgb(156, 125, 125);
+  display: flex;
+  overflow: hidden;
+  @media only screen and (max-width: 500px) {
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+  }
+  .product-view-image {
+    width: 50%;
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      height: 50%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media only screen and (max-width: 500px) {
+        border-radius: 20px;
+      }
+    }
+  }
+  .product-view-info {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 30px;
+    @media only screen and (max-width: 500px) {
+      width: 100%;
+      gap: 10px;
+      padding: 25px 15px;
+    }
+    h1 {
+      font-size: 50px;
+      color: rgba(255, 255, 255, 0.9);
+      @media only screen and (max-width: 500px) {
+        font-size: 35px;
+      }
+    }
+    span {
+      font-size: 30px;
+      color: rgba(255, 255, 255, 0.8);
+      @media only screen and (max-width: 500px) {
+        font-size: 20px;
+      }
+    }
+    p {
+      font-size: 20px;
+      color: rgba(255, 255, 255, 0.7);
+      font-weight: 400;
+      line-height: 28px;
+      @media only screen and (max-width: 500px) {
+        font-size: 14px;
+        line-height: 16px;
+      }
+    }
+    .star-container {
+      display: flex;
+      gap: 5px;
+      img {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    .light {
+      filter: brightness(100%);
+      cursor: pointer;
+    }
+    .dark {
+      filter: brightness(50%);
+      cursor: pointer;
+    }
+    button {
+      border-radius: 10px;
+      padding: 12px 17px;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+      color: white;
+    }
+    .button-container {
+      display: flex;
+      gap: 20px;
+      justify-content: flex-end;
+      @media only screen and (max-width: 500px) {
+        justify-content: space-between;
+      }
+
+      .return {
+        background-color: rgb(231, 95, 95);
+      }
+      .add {
+        background-color: rgb(114, 180, 83);
+      }
+    }
+  }
+}
